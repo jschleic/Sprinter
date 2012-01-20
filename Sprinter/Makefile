@@ -152,6 +152,7 @@ sym: applet/$(TARGET).sym
 
 # Program the device.  
 upload: applet/$(TARGET).hex
+	./reset.py
 	$(AVRDUDE) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH)
 
 
