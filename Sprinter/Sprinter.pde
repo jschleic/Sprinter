@@ -1749,6 +1749,12 @@ FORCE_INLINE void process_commands()
     }
     
   }
+
+  else if(code_seen('T')) // T<n> select Tool = Extruder number
+  {
+    // not yet implemented
+  }
+
   else{
       showString(PSTR("// Unknown command:\r\n"));
       showString(PSTR("// "));
