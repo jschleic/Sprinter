@@ -1750,7 +1750,8 @@ FORCE_INLINE void process_commands()
     
   }
   else{
-      showString(PSTR("Unknown command:\r\n"));
+      showString(PSTR("// Unknown command:\r\n"));
+      showString(PSTR("// "));
       Serial.println(cmdbuffer[bufindr]);
   }
   
