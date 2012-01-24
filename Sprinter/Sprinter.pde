@@ -1601,15 +1601,15 @@ FORCE_INLINE void process_commands()
         showString(PSTR("\r\n"));
         break;
       case 114: // M114
-	showString(PSTR("X:"));
+        showString(PSTR("ok C: X:"));
         Serial.print(current_position[0]);
-	showString(PSTR("Y:"));
+        showString(PSTR(" Y:"));
         Serial.print(current_position[1]);
-	showString(PSTR("Z:"));
+        showString(PSTR(" Z:"));
         Serial.print(current_position[2]);
-	showString(PSTR("E:"));
+        showString(PSTR(" E:"));
         Serial.println(current_position[3]);
-        break;
+        return;
       case 119: // M119
       
       	#if (X_MIN_PIN > -1)
