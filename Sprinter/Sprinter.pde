@@ -1493,7 +1493,7 @@ FORCE_INLINE void process_commands()
       #endif
           if( (millis() - codenum) > 1000 ) //Print Temp Reading every 1 second while heating up/cooling down
           {
-            showString(PSTR("T:"));
+            showString(PSTR("// T:"));
             Serial.println( analog2temp(current_raw) );
             codenum = millis();
           }
