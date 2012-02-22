@@ -138,9 +138,9 @@ const bool max_software_endstops = true; //If true, axis won't move to coordinat
 //-----------------------------------------------------------------------
 //Max Length for Prusa Mendel, check the ways of your axis and set this Values
 //-----------------------------------------------------------------------
-const int X_MAX_LENGTH = 190;
+const int X_MAX_LENGTH = 133;
 const int Y_MAX_LENGTH = 200;
-const int Z_MAX_LENGTH = 50;
+const int Z_MAX_LENGTH = 60;
 
 //-----------------------------------------------------------------------
 //// MOVEMENT SETTINGS
